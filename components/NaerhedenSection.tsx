@@ -102,7 +102,7 @@ export default function NaerhedenSection() {
   }
 
   return (
-    <section id="naerheden" className="py-20 bg-forest-900 overflow-x-hidden">
+    <section id="naerheden" className="py-20 bg-forest-900">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
@@ -123,7 +123,7 @@ export default function NaerhedenSection() {
 
           {/* Map */}
           <FadeUp>
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ height: 540 }}>
+            <div className="rounded-2xl overflow-hidden shadow-lg border border-white/10" style={{ height: 540 }}>
               <NaerhedenMap
                 features={filtered}
                 selectedId={selectedId}
