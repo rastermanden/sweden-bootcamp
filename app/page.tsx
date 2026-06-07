@@ -102,15 +102,16 @@ export default function Home() {
       >
         <div className="relative z-10 max-w-3xl mx-auto px-6 pt-24 pb-36">
           <span className="inline-flex items-center gap-2 bg-white/14 backdrop-blur-sm border border-white/25 rounded-full px-4 py-1.5 text-[.78rem] font-bold tracking-widest uppercase mb-7 text-white/90">
-            🌲 3 dages bootcamp · Sverige
+            🌲 Intensivt · Stemningsfyldt · Mærkbart resultat
           </span>
           <h1 className="font-serif text-[clamp(2.4rem,6vw,4rem)] font-bold leading-tight mb-5 text-white drop-shadow-lg">
-            Find din styrke<br />
-            <em>i naturens ro</em>
+            Mærk forskellen —<br />
+            <em>allerede fra dag&nbsp;1</em>
           </h1>
           <p className="text-[clamp(1rem,2.2vw,1.2rem)] text-white/85 max-w-lg mx-auto mb-10 leading-relaxed">
-            En uforglemmelig weekendoplevelse med træning, mindfulness og sunde måltider
-            i Sveriges storslåede natur — for alle der vil gøre kroppen godt.
+            3 intensive dage i et af Sveriges smukkeste naturområder. Et stemningsfyldt
+            program der giver dig et mærkbart resultat i kroppen — og ro i sindet.
+            For dig der er 50+ og klar til at mærke noget.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="#booking" className="px-8 py-3.5 bg-forest-800 hover:bg-forest-900 text-white font-semibold rounded-full transition-all hover:-translate-y-0.5 hover:shadow-xl text-[.95rem]">
@@ -155,16 +156,17 @@ export default function Home() {
             <FadeUp delay={2}>
               <Label>Om bootcampen</Label>
               <h2 className="font-serif text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-forest-900 mb-5 leading-tight">
-                Bevægelse, nærvær<br />og frisk svensk luft
+                Intensivt. Stemningsfyldt.<br />Du <em>mærker</em> det.
               </h2>
               <p className="text-gray-500 mb-4 leading-relaxed">
-                Natur Bootcamp er skabt til dig der vil i gang med en sund rutine — eller gerne vil
-                genopfriske en aktiv livsstil i fællesskab med andre. Her er hverken elitesport eller
-                præstationspres — blot en indbydende ramme til at mærke din krop og finde ro.
+                Dette er ikke et hygge-arrangement hvor ingenting sker. Det er 3 intensive dage
+                hvor du presser dine grænser — skånsomt og guidet — og kommer hjem med et mærkbart
+                resultat i kroppen. Mere energi, mere fleksibilitet og en ro du husker.
               </p>
               <p className="text-gray-500 mb-8 leading-relaxed">
-                Tre dage i Sveriges smukke natur med et omhyggeligt tilrettelagt program der balancerer
-                fysisk aktivitet, vejrtrækning og mindfulness — suppleret af lette, nærende måltider.
+                Vi holder til i Lidhult i Småland — et af Sveriges mest stemningsfyldte
+                naturområder med tæt skov, Bolmen-søen og frisk luft i alle retninger.
+                Rammen er designet specifikt til 50+ — alle køn — uanset dit udgangspunkt.
               </p>
               <div className="grid grid-cols-2 gap-2.5">
                 {[
@@ -443,6 +445,84 @@ export default function Home() {
         </p>
       </section>
 
+      {/* ── NÆROMRÅDET ── */}
+      <section id="naeromraade" className="py-20 bg-forest-900">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <LabelLight>Nærområdet</LabelLight>
+            <h2 className="font-serif text-4xl font-bold text-white mb-4">
+              Et stemningsfyldt område<br />med masser at opleve
+            </h2>
+            <p className="text-white/60 max-w-2xl mx-auto">
+              Vi holder til i Lidhult i Småland — omgivet af to af egnens smukkeste søer,
+              Bolmen og Unnen. Krystalklart vand, tæt skov og fuldstændig stilhed
+              danner rammen — og der er rigeligt at udforske når programmet holder pause.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 items-start">
+            {/* Map */}
+            <FadeUp>
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <iframe
+                  title="Bolmen og Unnen, Lidhult, Småland"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.2%2C56.55%2C14.1%2C57.0&layer=mapnik&marker=56.83%2C13.72"
+                  width="100%"
+                  height="420"
+                  style={{ border: 0, display: 'block' }}
+                  loading="lazy"
+                />
+                <div className="bg-forest-950/80 px-5 py-3 flex items-center gap-2">
+                  <span className="text-sage-300 text-sm">📍</span>
+                  <span className="text-white/70 text-xs">
+                    Bolmen & Unnen, Lidhult, Småland ·{' '}
+                    <a
+                      href="https://www.openstreetmap.org/#map=11/56.78/13.72"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sage-300 hover:underline"
+                    >
+                      Åbn i OpenStreetMap
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </FadeUp>
+
+            {/* Activity cards */}
+            <FadeUp delay={2}>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { icon: '🚣', title: 'Kano på Bolmen', desc: 'Bolmen er en af Sveriges største søer. Padl ud i stilheden, omgivet af skov og himmel.' },
+                  { icon: '🏊', title: 'Badning i Unnen', desc: 'Unnen er en perle med krystalklart vand og stille bredder — perfekt til en spontan dukkert.' },
+                  { icon: '🎣', title: 'Fiskeri', desc: 'Begge søer byder på fremragende fiskeri — gedde, aborre og skalle i rigelige mængder.' },
+                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden efterfulgt af en dukkert i Bolmen. En klassiker.' },
+                  { icon: '🥾', title: 'Skovvandringer', desc: 'Uberørte stier langs Bolmens bredder og ind i Smålands tætte skove.' },
+                  { icon: '🚴', title: 'Cykelruter', desc: 'Rolige skovveje og asfaltruter mellem de to søer — ideel til en stille aftentur.' },
+                  { icon: '🌾', title: 'Lokale gårde', desc: 'Smålandske gårdbutikker i nærområdet med bær, honning og håndlavede produkter.' },
+                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge ved søbredderne, fiskeørne over Bolmen og rådyr i skovkanten — naturen er tæt på.' },
+                ].map(({ icon, title, desc }) => (
+                  <div
+                    key={title}
+                    className="bg-white/7 border border-white/10 rounded-xl p-4 hover:bg-white/12 transition-colors duration-200"
+                  >
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <span className="text-xl">{icon}</span>
+                      <span className="font-serif font-semibold text-white text-[.95rem]">{title}</span>
+                    </div>
+                    <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-white/35 text-xs mt-4 leading-relaxed">
+                * Aktiviteter i nærområdet er ikke inkluderet i bootcamp-prisen og arrangeres selvstændigt.
+                Vi hjælper gerne med anbefalinger og booking.
+              </p>
+            </FadeUp>
+          </div>
+        </div>
+      </section>
+
       {/* ── BOOKING ── */}
       <BookingSection />
 
@@ -466,7 +546,7 @@ export default function Home() {
                 {[
                   ['📧','E-mail','info@naturbootcamp.dk'],
                   ['📱','Telefon','+45 00 00 00 00'],
-                  ['📍','Lokation','Dalarna / Värmland, Sverige'],
+                  ['📍','Lokation','Lidhult, Småland, Sverige'],
                   ['🕐','Svartid','Inden for 1 hverdag'],
                 ].map(([ic, lbl, val]) => (
                   <div key={lbl} className="flex items-start gap-4">
