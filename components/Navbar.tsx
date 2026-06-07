@@ -6,6 +6,7 @@ const NAV_LINKS = [
   ['Program',       '#program'],
   ['Ophold & Mad',  '#ophold'],
   ['Priser',        '#priser'],
+  ['Nærområdet',    '#naeromraade'],
   ['Kontakt',       '#kontakt'],
 ] as const
 

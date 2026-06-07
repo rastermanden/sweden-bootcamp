@@ -102,15 +102,16 @@ export default function Home() {
       >
         <div className="relative z-10 max-w-3xl mx-auto px-6 pt-24 pb-36">
           <span className="inline-flex items-center gap-2 bg-white/14 backdrop-blur-sm border border-white/25 rounded-full px-4 py-1.5 text-[.78rem] font-bold tracking-widest uppercase mb-7 text-white/90">
-            🌲 3 dages bootcamp · Sverige
+            🌲 Intensivt · Stemningsfyldt · Mærkbart resultat
           </span>
           <h1 className="font-serif text-[clamp(2.4rem,6vw,4rem)] font-bold leading-tight mb-5 text-white drop-shadow-lg">
-            Find din styrke<br />
-            <em>i naturens ro</em>
+            Mærk forskellen —<br />
+            <em>allerede fra dag&nbsp;1</em>
           </h1>
           <p className="text-[clamp(1rem,2.2vw,1.2rem)] text-white/85 max-w-lg mx-auto mb-10 leading-relaxed">
-            En uforglemmelig weekendoplevelse med træning, mindfulness og sunde måltider
-            i Sveriges storslåede natur — for alle der vil gøre kroppen godt.
+            3 intensive dage i et af Sveriges smukkeste naturområder. Et stemningsfyldt
+            program der giver dig et mærkbart resultat i kroppen — og ro i sindet.
+            For dig der er 50+ og klar til at mærke noget.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <a href="#booking" className="px-8 py-3.5 bg-forest-800 hover:bg-forest-900 text-white font-semibold rounded-full transition-all hover:-translate-y-0.5 hover:shadow-xl text-[.95rem]">
@@ -155,16 +156,17 @@ export default function Home() {
             <FadeUp delay={2}>
               <Label>Om bootcampen</Label>
               <h2 className="font-serif text-[clamp(1.8rem,4vw,2.8rem)] font-bold text-forest-900 mb-5 leading-tight">
-                Bevægelse, nærvær<br />og frisk svensk luft
+                Intensivt. Stemningsfyldt.<br />Du <em>mærker</em> det.
               </h2>
               <p className="text-gray-500 mb-4 leading-relaxed">
-                Natur Bootcamp er skabt til dig der vil i gang med en sund rutine — eller gerne vil
-                genopfriske en aktiv livsstil i fællesskab med andre. Her er hverken elitesport eller
-                præstationspres — blot en indbydende ramme til at mærke din krop og finde ro.
+                Dette er ikke et hygge-arrangement hvor ingenting sker. Det er 3 intensive dage
+                hvor du presser dine grænser — skånsomt og guidet — og kommer hjem med et mærkbart
+                resultat i kroppen. Mere energi, mere fleksibilitet og en ro du husker.
               </p>
               <p className="text-gray-500 mb-8 leading-relaxed">
-                Tre dage i Sveriges smukke natur med et omhyggeligt tilrettelagt program der balancerer
-                fysisk aktivitet, vejrtrækning og mindfulness — suppleret af lette, nærende måltider.
+                Vi holder til i et af Sveriges smukkeste og mest stemningsfyldte naturområder.
+                Skov, søer og frisk luft danner rammen for et program der er designet specifikt
+                til 50+ — alle køn — uanset dit udgangspunkt.
               </p>
               <div className="grid grid-cols-2 gap-2.5">
                 {[
@@ -441,6 +443,84 @@ export default function Home() {
         <p className="text-center text-gray-400 text-xs mt-6">
           Priser inkl. moms. Betaling ved bekræftelse. Aflysning op til 30 dage inden refunderes fuldt ud.
         </p>
+      </section>
+
+      {/* ── NÆROMRÅDET ── */}
+      <section id="naeromraade" className="py-20 bg-forest-900">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-14">
+            <LabelLight>Nærområdet</LabelLight>
+            <h2 className="font-serif text-4xl font-bold text-white mb-4">
+              Et stemningsfyldt område<br />med masser at opleve
+            </h2>
+            <p className="text-white/60 max-w-2xl mx-auto">
+              Vi holder til ved Siljan-søen i Dalarna — et af Sveriges smukkeste og mest
+              stemningsfyldte naturområder. Udover bootcampprogrammet er der rigeligt at
+              udforske i nærområdet, hvis du vil forlænge opholdet.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 items-start">
+            {/* Map */}
+            <FadeUp>
+              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
+                <iframe
+                  title="Dalarna, Sverige – nærområde"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.8%2C60.4%2C15.4%2C61.3&layer=mapnik"
+                  width="100%"
+                  height="420"
+                  style={{ border: 0, display: 'block' }}
+                  loading="lazy"
+                />
+                <div className="bg-forest-950/80 px-5 py-3 flex items-center gap-2">
+                  <span className="text-sage-300 text-sm">📍</span>
+                  <span className="text-white/70 text-xs">
+                    Siljan-søen, Dalarna, Sverige ·{' '}
+                    <a
+                      href="https://www.openstreetmap.org/#map=9/60.85/14.7"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sage-300 hover:underline"
+                    >
+                      Åbn i OpenStreetMap
+                    </a>
+                  </span>
+                </div>
+              </div>
+            </FadeUp>
+
+            {/* Activity cards */}
+            <FadeUp delay={2}>
+              <div className="grid sm:grid-cols-2 gap-3">
+                {[
+                  { icon: '🚣', title: 'Kano & kajak', desc: 'Padl på Siljan-søen — Sveriges 6. største sø omgivet af skov og bjerge.' },
+                  { icon: '🥾', title: 'Siljansleden', desc: '220 km vandrerute rundt om Siljan. Tag et afsnit i din eget tempo.' },
+                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden — en del af den svenske sjæl.' },
+                  { icon: '🏊', title: 'Badestrande', desc: 'Krystalklart vand i naturlige søer — mange steder direkte fra skoven.' },
+                  { icon: '🚴', title: 'Cykelruter', desc: 'Flade og bakket terræn — lej en cykel og oplev Dalarnas landsbyer.' },
+                  { icon: '🎨', title: 'Dalarna kunst', desc: 'Hjemsted for den ikoniske Dala-hest og levende folkekunst-tradition.' },
+                  { icon: '🌾', title: 'Gårdbutikker', desc: 'Lokale bær, ost og syltetøj direkte fra de omgivende gårde.' },
+                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge, rådyr, ørne og stork — naturen er nær og rig på oplevelser.' },
+                ].map(({ icon, title, desc }) => (
+                  <div
+                    key={title}
+                    className="bg-white/7 border border-white/10 rounded-xl p-4 hover:bg-white/12 transition-colors duration-200"
+                  >
+                    <div className="flex items-center gap-2 mb-1.5">
+                      <span className="text-xl">{icon}</span>
+                      <span className="font-serif font-semibold text-white text-[.95rem]">{title}</span>
+                    </div>
+                    <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
+                  </div>
+                ))}
+              </div>
+              <p className="text-white/35 text-xs mt-4 leading-relaxed">
+                * Aktiviteter i nærområdet er ikke inkluderet i bootcamp-prisen og arrangeres selvstændigt.
+                Vi hjælper gerne med anbefalinger og booking.
+              </p>
+            </FadeUp>
+          </div>
+        </div>
       </section>
 
       {/* ── BOOKING ── */}
