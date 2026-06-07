@@ -46,6 +46,10 @@ type GeoJSONMeta = {
 
 const data = rawData as unknown as { metadata: GeoJSONMeta; features: NaerhedenFeature[] }
 
+// Computed once at module level — prevents reference churn that triggers ResetView's useEffect
+const MAP_CENTER: [number, number] = [data.metadata.map.center[1], data.metadata.map.center[0]]
+const MAP_ZOOM = data.metadata.map.zoom
+
 const MONTH_NAMES = ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec']
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -97,8 +101,6 @@ export default function NaerhedenSection() {
     setSelectedId(prev => prev === id ? null : id)
   }
 
-  const mapCenter: [number, number] = [metadata.map.center[1], metadata.map.center[0]]
-
   return (
     <section id="naerheden" className="py-20 bg-forest-900">
       <div className="max-w-7xl mx-auto px-6">
@@ -126,8 +128,8 @@ export default function NaerhedenSection() {
                 features={filtered}
                 selectedId={selectedId}
                 onSelect={handleSelect}
-                center={mapCenter}
-                zoom={metadata.map.zoom}
+                center={MAP_CENTER}
+                zoom={MAP_ZOOM}
               />
             </div>
 
