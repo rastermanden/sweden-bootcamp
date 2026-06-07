@@ -454,9 +454,9 @@ export default function Home() {
               Et stemningsfyldt område<br />med masser at opleve
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">
-              Vi holder til i Lidhult i Småland — et roligt og stemningsfyldt hjørne af Sverige
-              omgivet af tæt skov, klare søer og Bolmen-søen lige om hjørnet.
-              Udover bootcampprogrammet er der rigeligt at udforske i nærområdet.
+              Vi holder til i Lidhult i Småland — omgivet af to af egnens smukkeste søer,
+              Bolmen og Unnen. Krystalklart vand, tæt skov og fuldstændig stilhed
+              danner rammen — og der er rigeligt at udforske når programmet holder pause.
             </p>
           </div>
 
@@ -465,8 +465,8 @@ export default function Home() {
             <FadeUp>
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                 <iframe
-                  title="Lidhult, Småland, Sverige – nærområde"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.0%2C56.5%2C14.5%2C57.1&layer=mapnik&marker=56.83%2C13.72"
+                  title="Bolmen og Unnen, Lidhult, Småland"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.2%2C56.55%2C14.1%2C57.0&layer=mapnik&marker=56.83%2C13.72"
                   width="100%"
                   height="420"
                   style={{ border: 0, display: 'block' }}
@@ -475,9 +475,9 @@ export default function Home() {
                 <div className="bg-forest-950/80 px-5 py-3 flex items-center gap-2">
                   <span className="text-sage-300 text-sm">📍</span>
                   <span className="text-white/70 text-xs">
-                    Lidhult, Småland, Sverige ·{' '}
+                    Bolmen & Unnen, Lidhult, Småland ·{' '}
                     <a
-                      href="https://www.openstreetmap.org/#map=10/56.83/13.72"
+                      href="https://www.openstreetmap.org/#map=11/56.78/13.72"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sage-300 hover:underline"
@@ -493,14 +493,14 @@ export default function Home() {
             <FadeUp delay={2}>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { icon: '🚣', title: 'Kano på Bolmen', desc: 'Padl på Bolmen — en af Sveriges største søer, omgivet af skov og stilhed.' },
-                  { icon: '🎣', title: 'Fiskeri', desc: 'Bolmen er berømt for gedde, aborre og aborrefiskeri i klart ferskvand.' },
-                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden — obligatorisk del af den svenske naturoplevelse.' },
-                  { icon: '🏊', title: 'Badestrande', desc: 'Krystalklart vand og sandstrande ved Bolmen — direkte adgang fra skoven.' },
-                  { icon: '🥾', title: 'Skovvandringer', desc: 'Uberørte vandrestier gennem Smålands tætte nåle- og løvskove.' },
-                  { icon: '🚴', title: 'Cykelruter', desc: 'Rolige veje og stier gennem Ljungby Kommune — ideel til aftenscykelture.' },
-                  { icon: '🌾', title: 'Lokale gårde', desc: 'Smålandske gårdbutikker med bær, æbler, ost og håndlavede produkter.' },
-                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge, rådyr, traner og fiskeørne — Småland er rigt på vildtliv.' },
+                  { icon: '🚣', title: 'Kano på Bolmen', desc: 'Bolmen er en af Sveriges største søer. Padl ud i stilheden, omgivet af skov og himmel.' },
+                  { icon: '🏊', title: 'Badning i Unnen', desc: 'Unnen er en perle med krystalklart vand og stille bredder — perfekt til en spontan dukkert.' },
+                  { icon: '🎣', title: 'Fiskeri', desc: 'Begge søer byder på fremragende fiskeri — gedde, aborre og skalle i rigelige mængder.' },
+                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden efterfulgt af en dukkert i Bolmen. En klassiker.' },
+                  { icon: '🥾', title: 'Skovvandringer', desc: 'Uberørte stier langs Bolmens bredder og ind i Smålands tætte skove.' },
+                  { icon: '🚴', title: 'Cykelruter', desc: 'Rolige skovveje og asfaltruter mellem de to søer — ideel til en stille aftentur.' },
+                  { icon: '🌾', title: 'Lokale gårde', desc: 'Smålandske gårdbutikker i nærområdet med bær, honning og håndlavede produkter.' },
+                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge ved søbredderne, fiskeørne over Bolmen og rådyr i skovkanten — naturen er tæt på.' },
                 ].map(({ icon, title, desc }) => (
                   <div
                     key={title}
