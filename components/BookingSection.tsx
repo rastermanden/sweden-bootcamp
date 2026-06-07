@@ -1,14 +1,15 @@
 'use client'
 import { useState } from 'react'
+import rawDates from '@/data/bootcamp-dates.json'
 
 type BC = { start: Date; end: Date; label: string; spots: number }
 
-const DATES: BC[] = [
-  { start: new Date(2026, 7,  7),  end: new Date(2026, 7,  9),  label: 'Fredag 7. – Søndag 9. august 2026',   spots: 4 },
-  { start: new Date(2026, 8, 11),  end: new Date(2026, 8, 13),  label: 'Fredag 11. – Søndag 13. sept. 2026',  spots: 8 },
-  { start: new Date(2026, 9,  2),  end: new Date(2026, 9,  4),  label: 'Fredag 2. – Søndag 4. okt. 2026',     spots: 6 },
-  { start: new Date(2026, 10, 6),  end: new Date(2026, 10, 8),  label: 'Fredag 6. – Søndag 8. nov. 2026',     spots: 2 },
-]
+const DATES: BC[] = rawDates.map(d => ({
+  start: new Date(d.start),
+  end:   new Date(d.end),
+  label: d.label,
+  spots: d.spots,
+}))
 
 const MONTHS = ['Januar','Februar','Marts','April','Maj','Juni','Juli','August','September','Oktober','November','December']
 const DAYS   = ['Ma','Ti','On','To','Fr','Lø','Sø']
