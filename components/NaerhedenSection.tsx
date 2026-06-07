@@ -102,7 +102,7 @@ export default function NaerhedenSection() {
   }
 
   return (
-    <section id="naerheden" className="py-20 bg-forest-900">
+    <section id="naerheden" className="py-20 bg-forest-900 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Header */}
