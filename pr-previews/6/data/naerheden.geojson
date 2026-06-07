@@ -1,0 +1,373 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "Nærheden",
+    "subtitle": "Natur Bootcamp Sverige – Lidhult, Småland",
+    "description": "Seværdigheder, aktiviteter og naturattraktioner i nærområdet rundt om lejren",
+    "region": {
+      "name": "Lidhult, Kronobergs Län, Sverige",
+      "country": "SE"
+    },
+    "map": {
+      "center": [13.72, 56.83],
+      "zoom": 11,
+      "boundingBox": {
+        "southwest": [13.30, 56.60],
+        "northeast": [14.10, 57.10]
+      },
+      "tileAttribution": "© OpenStreetMap contributors © CARTO"
+    },
+    "categories": [
+      { "id": "lejr",  "label": "Lejren",            "color": "#1B4332", "emoji": "🏕️" },
+      { "id": "vand",  "label": "Vandaktiviteter",    "color": "#1565C0", "emoji": "🌊" },
+      { "id": "natur", "label": "Natur & Skov",       "color": "#40916C", "emoji": "🌲" },
+      { "id": "lokal", "label": "Lokalt & Kultur",    "color": "#8B5E00", "emoji": "🌾" }
+    ],
+    "difficulties": [
+      { "id": "let",          "label": "Let",          "color": "#4CAF50" },
+      { "id": "let-moderat",  "label": "Let–Moderat",  "color": "#8BC34A" },
+      { "id": "moderat",      "label": "Moderat",      "color": "#FF9800" },
+      { "id": "kraevende",    "label": "Krævende",     "color": "#F44336" }
+    ],
+    "schemaVersion": "1.0.0",
+    "lastUpdated": "2026-06-07"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "id": "camp-lidhult",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.717, 56.820]
+      },
+      "properties": {
+        "name": "Natur Bootcamp Sverige",
+        "nameShort": "Lejren",
+        "category": "lejr",
+        "icon": "🏕️",
+        "tagline": "Vores base i hjertet af Småland",
+        "description": "Lejren ligger centralt i Lidhult med direkte adgang til søerne Bolmen og Unnen og de omgivende skove.",
+        "details": "Fra lejren er det kort til Bolmen mod nord og Unnen mod syd. Alle programmer starter og slutter her — og naturen er bogstaveligt talt lige udenfor døren. Faciliteter inkluderer overnatning, madlavning, yoga-platform og saunaadgang.",
+        "address": "Lidhult, Kronobergs Län, Sverige",
+        "distance": null,
+        "duration": null,
+        "difficulty": null,
+        "bestMonths": [5, 6, 7, 8, 9],
+        "included": true,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?w=800&h=600&fit=crop&q=80",
+            "alt": "Naturlejr i skovens hjerte ved søen",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bolmen-kano",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.602, 56.889]
+      },
+      "properties": {
+        "name": "Kano på Bolmen",
+        "nameShort": "Kano",
+        "category": "vand",
+        "icon": "🚣",
+        "tagline": "Padl ud i stilheden på Sveriges femte største sø",
+        "description": "Bolmen strækker sig over 180 km² og byder på enestående kanooplevelser med krystalklart vand og uberørt natur langs bredden.",
+        "details": "Med en overflade på over 180 km² er Bolmen en af Sveriges mest spektakulære kanodestinationer. Padl langs naturlige øer, observer vandfugle og nyd den fuldstændige stilhed. Udlejning af kanoer kan arrangeres lokalt — spørg i lejren.",
+        "distance": "8 km",
+        "duration": "2–4 timer",
+        "difficulty": "let",
+        "bestMonths": [5, 6, 7, 8, 9],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=600&fit=crop&q=80",
+            "alt": "Kano på en stille sø omgivet af tæt skov",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=13/56.889/13.602"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bolmen-badestrand",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.671, 56.875]
+      },
+      "properties": {
+        "name": "Bolmen Badestrand",
+        "nameShort": "Bolmen Strand",
+        "category": "vand",
+        "icon": "🏊",
+        "tagline": "Krystalklart vand med udsigt til uberørt skovkyst",
+        "description": "En af Bolmens smukkeste badestrande — rolig, sandgrunnet og omgivet af tæt skov. Vandet er rent og klart.",
+        "details": "Stranden ved Bolmen er et lokalt skjult juwel. Med sandgrundt vand og skovlinje på alle sider er det det perfekte sted til en frisk dukkert efter morgenprogrammet. Ingen faciliteter — ren natur.",
+        "distance": "5 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [6, 7, 8],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=600&fit=crop&q=80",
+            "alt": "Badning i krystalklart søvand omgivet af natur",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=14/56.875/13.671"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bolmen-bastu",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.655, 56.863]
+      },
+      "properties": {
+        "name": "Traditionel Bastubad",
+        "nameShort": "Bastu",
+        "category": "vand",
+        "icon": "🧖",
+        "tagline": "Ægte svensk svedebad med dukkert i søen",
+        "description": "En vedovnsopvarmet bastu direkte ved Bolmens bred — varm dig op i sveden, svøm ud i søen og gentag.",
+        "details": "Den svenske bastu er mere end et bad — det er et ritual. Varm dig op, svøm ud i søen, og gentag. En klassisk oplevelse der sættes pris på efter en lang dag i naturen. Bastuen kan bookes lokalt og kræver forudgående aftale.",
+        "distance": "6 km",
+        "duration": "2 timer",
+        "difficulty": "let",
+        "bestMonths": [5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1587831990711-23ca6441447b?w=800&h=600&fit=crop&q=80",
+            "alt": "Traditionel nordisk bastu ved søens bred",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "bolmen-fiskeri",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.521, 56.924]
+      },
+      "properties": {
+        "name": "Fiskeri i Bolmen",
+        "nameShort": "Fiskeri",
+        "category": "vand",
+        "icon": "🎣",
+        "tagline": "Gedde, aborre og skalle i en af Sveriges rigeste fiskeøer",
+        "description": "Bolmen er et mekka for lystfiskere. Med gedde, aborre og skalle i de lavvandede vige er der fangst hele sæsonen.",
+        "details": "Fiskekortet til Bolmen fås lokalt og dækker hele søen. De bedste spots er langs rørskoven mod vest og ved de lavvandede bugte om morgenen. Medbragt stang anbefales — udlejning er begrænset i området.",
+        "distance": "12 km",
+        "duration": "Halv dag",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=800&h=600&fit=crop&q=80",
+            "alt": "Lystfiskeri på stille sø i tidlig morgen",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=13/56.924/13.521"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "unnen-badning",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.880, 56.745]
+      },
+      "properties": {
+        "name": "Badning i Unnen",
+        "nameShort": "Unnen",
+        "category": "vand",
+        "icon": "🏊",
+        "tagline": "Perlen syd for Lidhult — stille, klart og næsten uberørt",
+        "description": "Unnen er en naturperle med usædvanligt klart vand og stille, skovomkransede bredder — et ideelt sted til svømning og afslapning.",
+        "details": "Unnen er langt mindre end Bolmen og byder på en mere intim naturoplevelse. Vandet er klart, skovene tætte, og besøgende er sjældne. Perfekt til den der søger ro og fordybelse — og et spontant bad i komplet stilhed.",
+        "distance": "10 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [6, 7, 8],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop&q=80",
+            "alt": "Krystalklart søvand i uberørt naturomgivelse",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=13/56.745/13.880"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "skov-vandring",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.727, 56.895]
+      },
+      "properties": {
+        "name": "Skovvandring",
+        "nameShort": "Skovsti",
+        "category": "natur",
+        "icon": "🥾",
+        "tagline": "Uberørte stier langs Bolmens skovklædte bredder",
+        "description": "Smålandske skovstier fører dig langs Bolmens vestbred — med udsigt til søen, fugleskrig og duft af fyrretræer.",
+        "details": "Ruten langs Bolmens vestbred er ca. 8 km lang og kan kombineres med en pause ved vandet. Terrænet er varieret med flad skovbund og let bakket kystlinje. Vandrestøvler anbefales — stien kan være mudret efter regn. Ingen afmærkede ruter; orienter dig med kort.",
+        "distance": "3 km til start",
+        "duration": "1–6 timer",
+        "difficulty": "let-moderat",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800&h=600&fit=crop&q=80",
+            "alt": "Skovsti gennem tæt nåleskov i Småland",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=13/56.895/13.727"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "cykel-soerne",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.745, 56.822]
+      },
+      "properties": {
+        "name": "Cykelruter",
+        "nameShort": "Cykelrute",
+        "category": "natur",
+        "icon": "🚴",
+        "tagline": "Rolige skovveje og asfaltruter mellem Bolmen og Unnen",
+        "description": "Skovveje og rolige asfaltruter forbinder Bolmen og Unnen — ideel til en aftentur med udsigt til begge søer undervejs.",
+        "details": "Ruten fra lejren mod Bolmen er ca. 12 km retur og følger delvist skovveje. Den kan forlænges mod Unnen via lokale biveje. Terrænet er fladt til let bakket og egner sig til alle niveauer. Cykler kan lejes i Lidhult.",
+        "distance": "Fra lejren",
+        "duration": "1–4 timer",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=800&h=600&fit=crop&q=80",
+            "alt": "Cykling på skovvej i stille skovlandskab",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "natur-dyreliv",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.782, 56.928]
+      },
+      "properties": {
+        "name": "Dyreliv & Elge",
+        "nameShort": "Dyreliv",
+        "category": "natur",
+        "icon": "🦌",
+        "tagline": "Elge, fiskeørne og rådyr i vild natur",
+        "description": "Nærområdet er hjem for elge, rådyr og fiskeørne. Bedst observeret ved solopgang langs søbredderne eller i skovkanten mod nord.",
+        "details": "Elge er almindelige i Småland, særligt i de tidlige morgen- og aftentimer langs søbredderne. Langs Bolmens nordlige bred er der gode chancer for at se fiskeørne jagte. Medbring kikkert og bevæg dig stille og langsomt for de bedste observationer.",
+        "distance": "12 km",
+        "duration": "Solopgang / solnedgang",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1516222338250-863216ce01ea?w=800&h=600&fit=crop&q=80",
+            "alt": "Elg ved søbreden i morgentåge",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lokal-gaarde",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.752, 56.806]
+      },
+      "properties": {
+        "name": "Lokale Gårdbutikker",
+        "nameShort": "Gårdbutik",
+        "category": "lokal",
+        "icon": "🌾",
+        "tagline": "Bær, honning og håndlavede produkter fra Smålandske gårde",
+        "description": "Små gårde i nærområdet sælger friske jordbær, skovhonning og håndlavede produkter — en hyggelig udflugt fra lejren.",
+        "details": "I Lidhult-området finder du flere landmænd der sælger direkte fra gården. Sæsonen for bær er juli–august. Skovhonning er tilgængelig det meste af sommeren. Mange gårde har selvbetjent salg med æreskassen — typisk svensk tillid til sine kunder.",
+        "distance": "3–12 km",
+        "duration": "1–2 timer",
+        "difficulty": "let",
+        "bestMonths": [6, 7, 8, 9],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop&q=80",
+            "alt": "Idyllisk Smålandsk gård med marker og skov",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": []
+      }
+    }
+  ]
+}
