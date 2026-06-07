@@ -149,7 +149,7 @@ export default function NaerhedenSection() {
 
           {/* Sidebar */}
           <FadeUp delay={2}>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 lg:h-[540px]">
 
               {/* Category filter */}
               <div className="flex flex-wrap gap-2">
@@ -182,7 +182,7 @@ export default function NaerhedenSection() {
               </div>
 
               {/* Place list */}
-              <div className="flex flex-col gap-2.5 max-h-[460px] overflow-y-auto pr-1">
+              <div className="flex flex-col gap-2.5 flex-1 min-h-0 overflow-y-auto pr-1">
                 {filtered.map(feature => {
                   const p = feature.properties
                   const isSelected = feature.id === selectedId
