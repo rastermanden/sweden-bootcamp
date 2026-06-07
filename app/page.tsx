@@ -164,9 +164,9 @@ export default function Home() {
                 resultat i kroppen. Mere energi, mere fleksibilitet og en ro du husker.
               </p>
               <p className="text-gray-500 mb-8 leading-relaxed">
-                Vi holder til i et af Sveriges smukkeste og mest stemningsfyldte naturområder.
-                Skov, søer og frisk luft danner rammen for et program der er designet specifikt
-                til 50+ — alle køn — uanset dit udgangspunkt.
+                Vi holder til i Lidhult i Småland — et af Sveriges mest stemningsfyldte
+                naturområder med tæt skov, Bolmen-søen og frisk luft i alle retninger.
+                Rammen er designet specifikt til 50+ — alle køn — uanset dit udgangspunkt.
               </p>
               <div className="grid grid-cols-2 gap-2.5">
                 {[
@@ -454,9 +454,9 @@ export default function Home() {
               Et stemningsfyldt område<br />med masser at opleve
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">
-              Vi holder til ved Siljan-søen i Dalarna — et af Sveriges smukkeste og mest
-              stemningsfyldte naturområder. Udover bootcampprogrammet er der rigeligt at
-              udforske i nærområdet, hvis du vil forlænge opholdet.
+              Vi holder til i Lidhult i Småland — et roligt og stemningsfyldt hjørne af Sverige
+              omgivet af tæt skov, klare søer og Bolmen-søen lige om hjørnet.
+              Udover bootcampprogrammet er der rigeligt at udforske i nærområdet.
             </p>
           </div>
 
@@ -465,8 +465,8 @@ export default function Home() {
             <FadeUp>
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
                 <iframe
-                  title="Dalarna, Sverige – nærområde"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.8%2C60.4%2C15.4%2C61.3&layer=mapnik"
+                  title="Lidhult, Småland, Sverige – nærområde"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.0%2C56.5%2C14.5%2C57.1&layer=mapnik&marker=56.83%2C13.72"
                   width="100%"
                   height="420"
                   style={{ border: 0, display: 'block' }}
@@ -475,9 +475,9 @@ export default function Home() {
                 <div className="bg-forest-950/80 px-5 py-3 flex items-center gap-2">
                   <span className="text-sage-300 text-sm">📍</span>
                   <span className="text-white/70 text-xs">
-                    Siljan-søen, Dalarna, Sverige ·{' '}
+                    Lidhult, Småland, Sverige ·{' '}
                     <a
-                      href="https://www.openstreetmap.org/#map=9/60.85/14.7"
+                      href="https://www.openstreetmap.org/#map=10/56.83/13.72"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-sage-300 hover:underline"
@@ -493,14 +493,14 @@ export default function Home() {
             <FadeUp delay={2}>
               <div className="grid sm:grid-cols-2 gap-3">
                 {[
-                  { icon: '🚣', title: 'Kano & kajak', desc: 'Padl på Siljan-søen — Sveriges 6. største sø omgivet af skov og bjerge.' },
-                  { icon: '🥾', title: 'Siljansleden', desc: '220 km vandrerute rundt om Siljan. Tag et afsnit i din eget tempo.' },
-                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden — en del af den svenske sjæl.' },
-                  { icon: '🏊', title: 'Badestrande', desc: 'Krystalklart vand i naturlige søer — mange steder direkte fra skoven.' },
-                  { icon: '🚴', title: 'Cykelruter', desc: 'Flade og bakket terræn — lej en cykel og oplev Dalarnas landsbyer.' },
-                  { icon: '🎨', title: 'Dalarna kunst', desc: 'Hjemsted for den ikoniske Dala-hest og levende folkekunst-tradition.' },
-                  { icon: '🌾', title: 'Gårdbutikker', desc: 'Lokale bær, ost og syltetøj direkte fra de omgivende gårde.' },
-                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge, rådyr, ørne og stork — naturen er nær og rig på oplevelser.' },
+                  { icon: '🚣', title: 'Kano på Bolmen', desc: 'Padl på Bolmen — en af Sveriges største søer, omgivet af skov og stilhed.' },
+                  { icon: '🎣', title: 'Fiskeri', desc: 'Bolmen er berømt for gedde, aborre og aborrefiskeri i klart ferskvand.' },
+                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden — obligatorisk del af den svenske naturoplevelse.' },
+                  { icon: '🏊', title: 'Badestrande', desc: 'Krystalklart vand og sandstrande ved Bolmen — direkte adgang fra skoven.' },
+                  { icon: '🥾', title: 'Skovvandringer', desc: 'Uberørte vandrestier gennem Smålands tætte nåle- og løvskove.' },
+                  { icon: '🚴', title: 'Cykelruter', desc: 'Rolige veje og stier gennem Ljungby Kommune — ideel til aftenscykelture.' },
+                  { icon: '🌾', title: 'Lokale gårde', desc: 'Smålandske gårdbutikker med bær, æbler, ost og håndlavede produkter.' },
+                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge, rådyr, traner og fiskeørne — Småland er rigt på vildtliv.' },
                 ].map(({ icon, title, desc }) => (
                   <div
                     key={title}
@@ -546,7 +546,7 @@ export default function Home() {
                 {[
                   ['📧','E-mail','info@naturbootcamp.dk'],
                   ['📱','Telefon','+45 00 00 00 00'],
-                  ['📍','Lokation','Dalarna / Värmland, Sverige'],
+                  ['📍','Lokation','Lidhult, Småland, Sverige'],
                   ['🕐','Svartid','Inden for 1 hverdag'],
                 ].map(([ic, lbl, val]) => (
                   <div key={lbl} className="flex items-start gap-4">
