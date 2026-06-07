@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import rawDates from '@/data/bootcamp-dates.json'
 
 type BC = { start: Date; end: Date; label: string; spots: number }
@@ -129,8 +130,8 @@ export default function BookingSection() {
   const [calYear,  setCalYear]  = useState(2026)
   const [calMonth, setCalMonth] = useState(7)
   const [selected, setSelected] = useState<number | null>(null)
-  const [submitted, setSubmitted] = useState(false)
   const [loading, setLoading] = useState(false)
+  const router = useRouter()
 
   function prevMonth() {
     if (calMonth === 0) { setCalMonth(11); setCalYear(y => y - 1) }
@@ -151,7 +152,7 @@ export default function BookingSection() {
         body: new FormData(form),
         headers: { Accept: 'application/json' },
       })
-      if (res.ok) setSubmitted(true)
+      if (res.ok) router.push('/tak')
       else throw new Error()
     } catch {
       alert('Noget gik galt. Prøv igen eller kontakt os direkte.')
@@ -210,18 +211,8 @@ export default function BookingSection() {
 
           {/* RIGHT — form */}
           <div className="bg-white rounded-2xl shadow-[0_8px_32px_rgba(27,67,50,.10)] p-7">
-            {submitted ? (
-              <div className="text-center py-10">
-                <span className="text-5xl block mb-4">🌿</span>
-                <h3 className="font-serif text-2xl font-bold text-forest-900 mb-2">Tak for din tilmelding!</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
-                  Vi har modtaget din forespørgsel og vender tilbage inden for 24 timer
-                  med bekræftelse og betalingsoplysninger.
-                </p>
-              </div>
-            ) : (
-              <>
-                <h3 className="font-serif text-2xl font-bold text-forest-900 mb-5">Tilmelding</h3>
+            <>
+              <h3 className="font-serif text-2xl font-bold text-forest-900 mb-5">Tilmelding</h3>
 
                 {selected !== null && (
                   <div className="bg-sage-100 rounded-xl px-4 py-3 text-sm font-medium text-forest-900 mb-5">
@@ -287,8 +278,7 @@ export default function BookingSection() {
                     {loading ? 'Sender…' : 'Send tilmelding →'}
                   </button>
                 </form>
-              </>
-            )}
+            </>
           </div>
         </div>
       </div>
