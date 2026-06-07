@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const NAV_LINKS = [
   ['Om bootcampen', '#om'],
@@ -18,6 +18,38 @@ export default function Navbar() {
     const handler = () => setScrolled(window.scrollY > 60)
     window.addEventListener('scroll', handler, { passive: true })
     return () => window.removeEventListener('scroll', handler)
+  }, [])
+
+  const drawerRef = useRef<HTMLDivElement>(null)
+
+  // iOS-compatible scroll lock: fix the body at the current scroll position
+  useEffect(() => {
+    if (open) {
+      const y = window.scrollY
+      document.body.style.position = 'fixed'
+      document.body.style.top = `-${y}px`
+      document.body.style.width = '100%'
+    } else {
+      const top = parseInt(document.body.style.top || '0', 10)
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+      if (top) window.scrollTo(0, -top)
+    }
+    return () => {
+      const top = parseInt(document.body.style.top || '0', 10)
+      document.body.style.position = ''
+      document.body.style.top = ''
+      document.body.style.width = ''
+      if (top) window.scrollTo(0, -top)
+    }
+  }, [open])
+
+  // Close on Escape
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('keydown', handler)
+    return () => document.removeEventListener('keydown', handler)
   }, [])
 
   const close = () => setOpen(false)
@@ -87,10 +119,20 @@ export default function Navbar() {
         </button>
       </div>
 
+      {/* Backdrop */}
+      {open && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black/40 z-[-1]"
+          aria-hidden="true"
+          onClick={close}
+        />
+      )}
+
       {/* Mobile drawer */}
       <div
+        ref={drawerRef}
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          open ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
+          open ? 'max-h-[480px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
         <div className="bg-forest-900 px-6 pb-6 pt-2 flex flex-col">
