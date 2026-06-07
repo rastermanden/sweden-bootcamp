@@ -3,6 +3,7 @@ import BookingSection from '@/components/BookingSection'
 import GallerySection from '@/components/GallerySection'
 import ContactForm from '@/components/ContactForm'
 import FadeUp from '@/components/FadeUp'
+import NaerhedenSection from '@/components/NaerhedenSection'
 
 /* ─── Shared helpers ─── */
 const Label = ({ children }: { children: React.ReactNode }) => (
@@ -445,83 +446,8 @@ export default function Home() {
         </p>
       </section>
 
-      {/* ── NÆROMRÅDET ── */}
-      <section id="naeromraade" className="py-20 bg-forest-900">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-14">
-            <LabelLight>Nærområdet</LabelLight>
-            <h2 className="font-serif text-4xl font-bold text-white mb-4">
-              Et stemningsfyldt område<br />med masser at opleve
-            </h2>
-            <p className="text-white/60 max-w-2xl mx-auto">
-              Vi holder til i Lidhult i Småland — omgivet af to af egnens smukkeste søer,
-              Bolmen og Unnen. Krystalklart vand, tæt skov og fuldstændig stilhed
-              danner rammen — og der er rigeligt at udforske når programmet holder pause.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-[1fr_1.1fr] gap-8 items-start">
-            {/* Map */}
-            <FadeUp>
-              <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
-                <iframe
-                  title="Bolmen og Unnen, Lidhult, Småland"
-                  src="https://www.openstreetmap.org/export/embed.html?bbox=13.2%2C56.55%2C14.1%2C57.0&layer=mapnik&marker=56.83%2C13.72"
-                  width="100%"
-                  height="420"
-                  style={{ border: 0, display: 'block' }}
-                  loading="lazy"
-                />
-                <div className="bg-forest-950/80 px-5 py-3 flex items-center gap-2">
-                  <span className="text-sage-300 text-sm">📍</span>
-                  <span className="text-white/70 text-xs">
-                    Bolmen & Unnen, Lidhult, Småland ·{' '}
-                    <a
-                      href="https://www.openstreetmap.org/#map=11/56.78/13.72"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sage-300 hover:underline"
-                    >
-                      Åbn i OpenStreetMap
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </FadeUp>
-
-            {/* Activity cards */}
-            <FadeUp delay={2}>
-              <div className="grid sm:grid-cols-2 gap-3">
-                {[
-                  { icon: '🚣', title: 'Kano på Bolmen', desc: 'Bolmen er en af Sveriges største søer. Padl ud i stilheden, omgivet af skov og himmel.' },
-                  { icon: '🏊', title: 'Badning i Unnen', desc: 'Unnen er en perle med krystalklart vand og stille bredder — perfekt til en spontan dukkert.' },
-                  { icon: '🎣', title: 'Fiskeri', desc: 'Begge søer byder på fremragende fiskeri — gedde, aborre og skalle i rigelige mængder.' },
-                  { icon: '🧖', title: 'Svensk bastu', desc: 'Traditionel svedebad ved søbredden efterfulgt af en dukkert i Bolmen. En klassiker.' },
-                  { icon: '🥾', title: 'Skovvandringer', desc: 'Uberørte stier langs Bolmens bredder og ind i Smålands tætte skove.' },
-                  { icon: '🚴', title: 'Cykelruter', desc: 'Rolige skovveje og asfaltruter mellem de to søer — ideel til en stille aftentur.' },
-                  { icon: '🌾', title: 'Lokale gårde', desc: 'Smålandske gårdbutikker i nærområdet med bær, honning og håndlavede produkter.' },
-                  { icon: '🦌', title: 'Dyreliv', desc: 'Elge ved søbredderne, fiskeørne over Bolmen og rådyr i skovkanten — naturen er tæt på.' },
-                ].map(({ icon, title, desc }) => (
-                  <div
-                    key={title}
-                    className="bg-white/7 border border-white/10 rounded-xl p-4 hover:bg-white/12 transition-colors duration-200"
-                  >
-                    <div className="flex items-center gap-2 mb-1.5">
-                      <span className="text-xl">{icon}</span>
-                      <span className="font-serif font-semibold text-white text-[.95rem]">{title}</span>
-                    </div>
-                    <p className="text-white/55 text-xs leading-relaxed">{desc}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="text-white/35 text-xs mt-4 leading-relaxed">
-                * Aktiviteter i nærområdet er ikke inkluderet i bootcamp-prisen og arrangeres selvstændigt.
-                Vi hjælper gerne med anbefalinger og booking.
-              </p>
-            </FadeUp>
-          </div>
-        </div>
-      </section>
+      {/* ── NÆRHEDEN ── */}
+      <NaerhedenSection />
 
       {/* ── BOOKING ── */}
       <BookingSection />
