@@ -9,7 +9,7 @@
       "country": "SE"
     },
     "map": {
-      "center": [13.72, 56.83],
+      "center": [13.55, 56.83],
       "zoom": 11,
       "boundingBox": {
         "southwest": [13.30, 56.60],
@@ -30,7 +30,7 @@
       { "id": "kraevende",    "label": "Krævende",     "color": "#F44336" }
     ],
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-06-07"
+    "lastUpdated": "2026-06-08"
   },
   "features": [
     {
@@ -38,7 +38,7 @@
       "id": "camp-lidhult",
       "geometry": {
         "type": "Point",
-        "coordinates": [13.717, 56.820]
+        "coordinates": [13.5473, 56.8297]
       },
       "properties": {
         "name": "Natur Bootcamp Sverige",
@@ -367,6 +367,215 @@
           }
         ],
         "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tira-oar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.6817, 56.9461]
+      },
+      "properties": {
+        "name": "Tira Øer Naturreservat",
+        "nameShort": "Tira Øer",
+        "category": "vand",
+        "icon": "🏝️",
+        "tagline": "Vilde øer i Bolmen — kun tilgængeligt med kano eller kajak",
+        "description": "Tira Øer er en gruppe øer og skær i den vestlige del af Bolmen, beskyttet som naturreservat. Øerne byder på gammel nåleskov, blomstrende lind, badestrand og vildt fugleliv.",
+        "details": "For at komme til øerne skal du have kano eller kajak — ingen regulær bådforbindelse findes. På Storø er der en sandstrand, bålplads og tørkloset. Der er i alt fem bålpladser fordelt på Storø, Björkö og Korpö, og du må overnatte én nat. Fiskeri kræver fiskekort, som fås lokalt. Fuglene er mangfoldige — ornitologer vil sætte pris på det rige og sårbare fugleliv.",
+        "address": "Tira öar, Hylte Kommune, Hallands Län, Sverige",
+        "distance": "14 km",
+        "duration": "Halv dag – hel dag",
+        "difficulty": "moderat",
+        "bestMonths": [5, 6, 7, 8, 9],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop&q=80",
+            "alt": "Vilde øer i stille sølandskab med nåleskov",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=14/56.9461/13.6817"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/halland/besoksmal/naturreservat/tira-oar.html"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "lidhultsasen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.4451, 56.8200]
+      },
+      "properties": {
+        "name": "Lidhultsåsen Naturreservat",
+        "nameShort": "Lidhultsåsen",
+        "category": "natur",
+        "icon": "🌲",
+        "tagline": "En istidens ryg — nåleskov, udsigt over to søer og badestrand i gåafstand",
+        "description": "Lidhultsåsen er en smal gletsjerbakke af grundfjeld og sand, rejst af indlandsisen og i dag dækket af høj fyrreskov. Ryggen løber mellem søerne Ältasjön mod nord og Askaken mod syd — begge synlige fra stien. Reservatet ligger kun 1 km syd for lejren.",
+        "details": "Den afmærkede rundsti på 2,5 km fører dig op langs ryggen med udsigt til begge søer og ned til badepladsen ved Askaken. Her er bord, grill, brygge, parkeringsplads og tørkloset. Fuglelivet er rigt — hold øje med spætter og rovfugle. Stien er let og fast underlag det meste af vejen. Tag badetøj med til en dukkert i Askaken efter turen.",
+        "address": "Lidhultsåsen, Ljungby Kommune, Kronobergs Län, Sverige",
+        "distance": "6 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=600&fit=crop&q=80",
+            "alt": "Fyrreskov på en bakkeryg med søudsigt i baggrunden",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=15/56.8200/13.4451"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/kronoberg/besoksmal/naturreservat/lidhultsasen.html"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "sigfridsleden",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.47, 56.78]
+      },
+      "properties": {
+        "name": "Sigfridsleden – Vandrerute",
+        "nameShort": "Sigfridsleden",
+        "category": "natur",
+        "icon": "🥾",
+        "tagline": "88 km pilgrimsrute gennem Smålands skov og sølandskab — del af Smålandsleden",
+        "description": "Sigfridsleden er en historisk pilgrimsrute på 88 km tværs af Kronobergs Län, fra Asa i nord til Knapelid ved Rottnen i syd. Ruten forbinder skov, søer og landsbyer og følger delvist Eurovandreruten E6.",
+        "details": "Ruten er opdelt i etapper på 8–15 km og kan vandres i sektioner over flere dage. Startpunktet Knapelid har parkeringsplads og er 5,5 km fra Linneryd med indkøbsmuligheder. Underlaget veksler mellem skovstier og grusveje. Medbring detaljeret kort — Naturkartan-appen anbefales. Kombiner med en overnatning for at opleve morgen og aften i Smålands skov.",
+        "address": "Knapelid, Nöbbele, Kronobergs Län, Sverige",
+        "distance": "~65 km",
+        "duration": "Flerdag (etapper 8–15 km)",
+        "difficulty": "let-moderat",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1501854140801-50d01698950b?w=800&h=600&fit=crop&q=80",
+            "alt": "Vandrerrute gennem tæt skovlandskab i Småland",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=13/56.78/14.47"
+          },
+          {
+            "label": "Naturkartan – Sigfridsleden",
+            "url": "https://www.naturkartan.se/en/kronobergs-lan/sigfridsleden"
+          },
+          {
+            "label": "Officiel side – Smålandsleden",
+            "url": "https://www.smalandsleden.se/en/hiking-trails/sigfridsledens-etapper-en-del-av-smalandsleden-trp-722"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "badplats-kampen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.8148, 56.8696]
+      },
+      "properties": {
+        "name": "Kampen Badestrand",
+        "nameShort": "Kampen",
+        "category": "vand",
+        "icon": "🏊",
+        "tagline": "Bynær badestrand i Växjö med aftensol og store græsplæner",
+        "description": "Kampen er Växjøs populære bystrand, beliggende lige syd for byens simhal. Store græsarealer til solbad, aftensol og adgang til vand for alle takket være en rullende baderampe.",
+        "details": "Stranden ligger ved Kampastigen 6 tæt på centrum og er let tilgængelig. Ud over badet finder du udendørs fitnessbane, beachvolleybanerne og en forhindringsbane på den nærliggende Kampaängen. Parkering findes langs Kampastigen og ved Växjö simhal. Kombinér gerne med et besøg i Växjø by.",
+        "address": "Kampastigen 6, Växjö, Kronobergs Län, Sverige",
+        "distance": "~75 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [6, 7, 8],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop&q=80",
+            "alt": "Bystrand med græsplæne og badevand i solskin",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=15/56.8696/14.8148"
+          },
+          {
+            "label": "Naturkartan",
+            "url": "https://www.naturkartan.se/sv/kronobergs-lan/badplats-kampen"
+          }
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "rocknenomradet",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5215, 56.8137]
+      },
+      "properties": {
+        "name": "Rocknenområdet Naturreservat",
+        "nameShort": "Rocknen",
+        "category": "natur",
+        "icon": "🌿",
+        "tagline": "En istidens grusryg rejst midt i Smålands moserige urskov",
+        "description": "Rocknenområdet er et 334 hektar stort naturreservat i Ljungby Kommune, oprettet i 1977. Kernen er en 2 km lang gletsjergrusryg (rullstensås) med smalle kanter og stejle skråninger, omgivet af Smålands største forekomst af myrlilje i de tilstødende moser.",
+        "details": "En afmærket rundsti på 2,6 km (orange markering) fører dig langs ryggens kam med udsigt over de brede moseflader på begge sider. Vegetationen er sparsom fyrreskov, lyng og dværgbirk på selve ryggen — kontrastfuldt mod den tætte mosevegetation i lavningerne. Husk gode sko — terrænet kan være fugtigt ved stierne ned mod moserne.",
+        "address": "Rocknenområdet, Ljungby Kommune, Kronobergs Län, Sverige",
+        "distance": "20 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=800&h=600&fit=crop&q=80",
+            "alt": "Skovsti langs moselandskab i Småland",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=14/56.8137/13.5215"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/kronoberg/besoksmal/naturreservat/rocknenomradet.html"
+          }
+        ]
       }
     }
   ]
