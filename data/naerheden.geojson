@@ -409,6 +409,47 @@
           }
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "lidhultsasen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.717, 56.811]
+      },
+      "properties": {
+        "name": "Lidhultsåsen Naturreservat",
+        "nameShort": "Lidhultsåsen",
+        "category": "natur",
+        "icon": "🌲",
+        "tagline": "En istidens ryg — nåleskov, udsigt over to søer og badestrand i gåafstand",
+        "description": "Lidhultsåsen er en smal gletsjerbakke af grundfjeld og sand, rejst af indlandsisen og i dag dækket af høj fyrreskov. Ryggen løber mellem søerne Ältasjön mod nord og Askaken mod syd — begge synlige fra stien. Reservatet ligger kun 1 km syd for lejren.",
+        "details": "Den afmærkede rundsti på 2,5 km fører dig op langs ryggen med udsigt til begge søer og ned til badepladsen ved Askaken. Her er bord, grill, brygge, parkeringsplads og tørkloset. Fuglelivet er rigt — hold øje med spætter og rovfugle. Stien er let og fast underlag det meste af vejen. Tag badetøj med til en dukkert i Askaken efter turen.",
+        "address": "Lidhultsåsen, Ljungby Kommune, Kronobergs Län, Sverige",
+        "distance": "1 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [4, 5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=800&h=600&fit=crop&q=80",
+            "alt": "Fyrreskov på en bakkeryg med søudsigt i baggrunden",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=15/56.811/13.717"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/kronoberg/besoksmal/naturreservat/lidhultsasen.html"
+          }
+        ]
+      }
     }
   ]
 }
