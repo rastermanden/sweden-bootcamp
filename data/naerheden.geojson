@@ -599,7 +599,14 @@
         "difficulty": "let",
         "bestMonths": [5, 6, 7, 8, 9, 10],
         "included": false,
-        "images": [],
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=800&h=600&fit=crop&q=80",
+            "alt": "Tæt gammel nålskov med mosbegroede stammer og dødt ved",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
         "links": [
           {
             "label": "Åbn i OpenStreetMap",

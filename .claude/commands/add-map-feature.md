@@ -78,7 +78,14 @@ All text fields (name, nameShort, tagline, description, details) must be in Dani
     "difficulty": "let|let-moderat|moderat|kraevende",
     "bestMonths": [5, 6, 7, 8, 9],
     "included": false,
-    "images": [],
+    "images": [
+      {
+        "url": "https://images.unsplash.com/photo-XXXXXXXXXX?w=800&h=600&fit=crop&q=80",
+        "alt": "Danish alt text describing the scene",
+        "credit": "Unsplash",
+        "isPrimary": true
+      }
+    ],
     "links": [
       {
         "label": "Åbn i OpenStreetMap",
