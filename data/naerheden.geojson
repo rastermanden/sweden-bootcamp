@@ -30,7 +30,7 @@
       { "id": "kraevende",    "label": "Krævende",     "color": "#F44336" }
     ],
     "schemaVersion": "1.0.0",
-    "lastUpdated": "2026-06-07"
+    "lastUpdated": "2026-06-08"
   },
   "features": [
     {
@@ -367,6 +367,47 @@
           }
         ],
         "links": []
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "tira-oar",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.6817, 56.9461]
+      },
+      "properties": {
+        "name": "Tira Øer Naturreservat",
+        "nameShort": "Tira Øer",
+        "category": "vand",
+        "icon": "🏝️",
+        "tagline": "Vilde øer i Bolmen — kun tilgængeligt med kano eller kajak",
+        "description": "Tira Øer er en gruppe øer og skær i den vestlige del af Bolmen, beskyttet som naturreservat. Øerne byder på gammel nåleskov, blomstrende lind, badestrand og vildt fugleliv.",
+        "details": "For at komme til øerne skal du have kano eller kajak — ingen regulær bådforbindelse findes. På Storø er der en sandstrand, bålplads og tørkloset. Der er i alt fem bålpladser fordelt på Storø, Björkö og Korpö, og du må overnatte én nat. Fiskeri kræver fiskekort, som fås lokalt. Fuglene er mangfoldige — ornitologer vil sætte pris på det rige og sårbare fugleliv.",
+        "address": "Tira öar, Hylte Kommune, Hallands Län, Sverige",
+        "distance": "14 km",
+        "duration": "Halv dag – hel dag",
+        "difficulty": "moderat",
+        "bestMonths": [5, 6, 7, 8, 9],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?w=800&h=600&fit=crop&q=80",
+            "alt": "Vilde øer i stille sølandskab med nåleskov",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=14/56.9461/13.6817"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/halland/besoksmal/naturreservat/tira-oar.html"
+          }
+        ]
       }
     }
   ]
