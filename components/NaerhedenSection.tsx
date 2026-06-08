@@ -182,7 +182,7 @@ export default function NaerhedenSection() {
               </div>
 
               {/* Place list */}
-              <div className="flex flex-col gap-2.5 flex-1 min-h-0 overflow-y-auto pr-1">
+              <div className="flex flex-col gap-2.5 flex-1 min-h-0 overflow-y-auto overflow-x-hidden pr-1">
                 {filtered.map(feature => {
                   const p = feature.properties
                   const isSelected = feature.id === selectedId
