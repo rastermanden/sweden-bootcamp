@@ -20,8 +20,10 @@ Try **WebFetch** on the URL. Many Swedish authority sites (Länsstyrelsen, Natur
 1. **Google Maps URL provided as second argument** — extract `LAT,LON` from patterns like:
    - `destination=LAT,LON`
    - `maps.google.com/maps?q=LAT,LON`
+   - `google.com/maps/place/LAT,LON/@...`
    - `google.com/maps/place/@LAT,LON,ZOOMz`
    - Note: Google Maps uses `lat,lon` order. GeoJSON coordinates are `[longitude, latitude]` — swap them.
+   - **`maps.app.goo.gl` short URLs cannot be expanded** — ask the user to open the link in their browser and copy the full URL from the address bar.
 
 2. **Fetched page contains a Google Maps link** — extract coordinates from it as above.
 
