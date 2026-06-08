@@ -577,6 +577,47 @@
           }
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "hasthultsskogen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5663689, 56.8170634]
+      },
+      "properties": {
+        "name": "Hästhultsskogen Naturreservat",
+        "nameShort": "Hästhultsskogen",
+        "category": "natur",
+        "icon": "🌲",
+        "tagline": "Urskoven lige om hjørnet — gammel nål, linnæa og skovens skjulte liv",
+        "description": "Hästhultsskogen er et 25,5 hektar stort naturreservat med urskovslignende nålskov, fredet siden 1974. Skoven er rig på dødt og nedfaldet træ, der giver liv til sjældne svampe, insekter og fugle. Skovbundens linnæa — Smålands landskabsblomst — blomstrer her sidst i juni.",
+        "details": "En orangeafmærket rundsti fører fra parkeringspladsen rundt om reservatets kerne. Hold øjnene åbne for troldmejse, sortmejse og fuglekonge — Europas mindste fugl og en hyppig gæst i de gamle graner. I oktober er svampesæsonen i fuld gang. Terrænet er let, men stien kan være fugtig efter regn — gode sko anbefales. Reservatet egner sig perfekt som en kort morgen- eller aftenturtur direkte fra lejren.",
+        "address": "Hästhultsskogen, Ljungby Kommune, Kronobergs Län, Sverige",
+        "distance": "2 km",
+        "duration": "1–2 timer",
+        "difficulty": "let",
+        "bestMonths": [5, 6, 7, 8, 9, 10],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1476231682828-37e571bc172f?w=800&h=600&fit=crop&q=80",
+            "alt": "Tæt gammel nålskov med mosbegroede stammer og dødt ved",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=15/56.8171/13.5664"
+          },
+          {
+            "label": "Officiel side (Länsstyrelsen)",
+            "url": "https://www.lansstyrelsen.se/kronoberg/besoksmal/naturreservat/hasthultsskogen.html"
+          }
+        ]
+      }
     }
   ]
 }
