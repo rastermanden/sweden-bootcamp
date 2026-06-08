@@ -12,19 +12,25 @@ const CAT_COLORS: Record<string, string> = {
   lokal: '#8B5E00',
 }
 
-function makeIcon(category: string, selected: boolean) {
+function makeIcon(category: string, selected: boolean, emoji: string) {
   const color = CAT_COLORS[category] ?? '#1B4332'
-  const size = selected ? 20 : 13
-  const border = selected ? 3 : 2
+  const fontSize = selected ? 22 : 16
+  const size = selected ? 36 : 28
+  const border = selected ? '2px' : '1.5px'
   return L.divIcon({
     className: '',
     html: `<div style="
-      width:${size}px;height:${size}px;
-      background:${color};
-      border:${border}px solid white;
-      border-radius:50%;
+      font-size:${fontSize}px;
+      line-height:1;
+      background:${color}33;
+      border:${border} solid ${color};
+      border-radius:6px;
+      padding:2px 3px;
       box-shadow:0 2px 8px rgba(0,0,0,.45);
-    "></div>`,
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+    ">${emoji}</div>`,
     iconSize: [size, size],
     iconAnchor: [size / 2, size / 2],
   })
@@ -98,7 +104,7 @@ export default function NaerhedenMap({ features, selectedId, onSelect, center, z
           <Marker
             key={feature.id}
             position={[lat, lng]}
-            icon={makeIcon(feature.properties.category, isSelected)}
+            icon={makeIcon(feature.properties.category, isSelected, feature.properties.icon)}
             zIndexOffset={isSelected ? 1000 : 0}
             eventHandlers={{
               click: () => onSelect(feature.id),
