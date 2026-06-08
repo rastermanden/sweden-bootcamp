@@ -9,7 +9,7 @@
       "country": "SE"
     },
     "map": {
-      "center": [13.72, 56.83],
+      "center": [13.55, 56.83],
       "zoom": 11,
       "boundingBox": {
         "southwest": [13.30, 56.60],
@@ -38,7 +38,7 @@
       "id": "camp-lidhult",
       "geometry": {
         "type": "Point",
-        "coordinates": [13.717, 56.820]
+        "coordinates": [13.5473, 56.8297]
       },
       "properties": {
         "name": "Natur Bootcamp Sverige",

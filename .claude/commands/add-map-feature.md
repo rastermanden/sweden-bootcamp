@@ -44,7 +44,7 @@ Never proceed with guessed, estimated, or approximate coordinates.
 
 - `category`: `vand` (lakes, rivers, swimming, kayaking, fishing, sauna), `natur` (forests, trails, hiking, wildlife, nature reserves), `lokal` (villages, farms, markets, cultural sites)
 - `difficulty`: `let`, `let-moderat`, `moderat`, or `kraevende`
-- `distance`: road or straight-line distance from the camp at Lidhult (~56.820°N, 13.717°E). If the feature falls outside the current map bounding box ([13.30–14.10°E, 56.60–57.10°N]), note this clearly.
+- `distance`: road or straight-line distance from the camp at Lidhult (~56.8297°N, 13.5473°E / Loshult 7, Lidhult). If the feature falls outside the current map bounding box ([13.30–14.10°E, 56.60–57.10°N]), note this clearly.
 - `duration`: realistic visit time
 - `bestMonths`: array of month numbers (1–12)
 - `included`: always `false` for external attractions
