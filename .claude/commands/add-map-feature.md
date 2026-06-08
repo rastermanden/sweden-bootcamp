@@ -11,21 +11,24 @@ Add a new attraction to the Nærheden map (`data/naerheden.geojson`).
 - `url` — a page with information about the attraction (Naturkartan, Länsstyrelsen, AllTrails, etc.)
 - `lat,lon` (optional) — explicit coordinates if the page doesn't have them or if you have more precise ones
 
-## Step 1 — Get page content
+## Step 1 — Get page content and coordinates
 
-Try **WebFetch** on the URL. Many Swedish authority sites (Länsstyrelsen, Naturkartan, AllTrails) return HTTP 403. If that happens, **WebSearch** the location name extracted from the URL slug.
+Try **WebFetch** on the URL. Many Swedish authority sites (Länsstyrelsen, Naturkartan, AllTrails) return HTTP 403. If that happens, **WebSearch** the location name extracted from the URL slug to get descriptive info.
 
-**Naturkartan coordinate trick:** Naturkartan pages have a "Hitta hit" / "Find here" button that links to Google Maps with exact coordinates. When fetching a Naturkartan page succeeds, look for URLs matching these patterns and extract the `LAT,LON` values:
+**Coordinates are required — never guess or estimate them.** Use this priority order:
 
-```
-https://maps.google.com/maps?q=LAT,LON
-https://www.google.com/maps/place/@LAT,LON,ZOOMz
-https://maps.google.se/maps?q=LAT,LON
-```
+1. **Google Maps URL provided as second argument** — extract `LAT,LON` from patterns like:
+   - `destination=LAT,LON`
+   - `maps.google.com/maps?q=LAT,LON`
+   - `google.com/maps/place/@LAT,LON,ZOOMz`
+   - Note: Google Maps uses `lat,lon` order. GeoJSON coordinates are `[longitude, latitude]` — swap them.
 
-Note: Google Maps uses `lat,lon` order. GeoJSON coordinates are `[longitude, latitude]` — swap them.
+2. **Fetched page contains a Google Maps link** — extract coordinates from it as above.
 
-If the user provides a Google Maps URL directly (copied from the Naturkartan page), extract coordinates from it the same way.
+3. **No coordinates available** — stop and ask the user:
+   > "I couldn't find coordinates for this location. Please open the Naturkartan or Länsstyrelsen page, click the **'Hitta hit'** (Find here) button, copy the Google Maps URL, and paste it here."
+
+Never proceed with guessed, estimated, or approximate coordinates.
 
 ## Step 2 — Extract information
 
