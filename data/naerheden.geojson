@@ -495,6 +495,47 @@
           }
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "badplats-kampen",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.8148, 56.8696]
+      },
+      "properties": {
+        "name": "Kampen Badestrand",
+        "nameShort": "Kampen",
+        "category": "vand",
+        "icon": "🏊",
+        "tagline": "Bynær badestrand i Växjö med aftensol og store græsplæner",
+        "description": "Kampen er Växjøs populære bystrand, beliggende lige syd for byens simhal. Store græsarealer til solbad, aftensol og adgang til vand for alle takket være en rullende baderampe.",
+        "details": "Stranden ligger ved Kampastigen 6 tæt på centrum og er let tilgængelig. Ud over badet finder du udendørs fitnessbane, beachvolleybanerne og en forhindringsbane på den nærliggende Kampaängen. Parkering findes langs Kampastigen og ved Växjö simhal. Kombinér gerne med et besøg i Växjø by.",
+        "address": "Kampastigen 6, Växjö, Kronobergs Län, Sverige",
+        "distance": "~75 km",
+        "duration": "1–3 timer",
+        "difficulty": "let",
+        "bestMonths": [6, 7, 8],
+        "included": false,
+        "images": [
+          {
+            "url": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=600&fit=crop&q=80",
+            "alt": "Bystrand med græsplæne og badevand i solskin",
+            "credit": "Unsplash",
+            "isPrimary": true
+          }
+        ],
+        "links": [
+          {
+            "label": "Åbn i OpenStreetMap",
+            "url": "https://www.openstreetmap.org/#map=15/56.8696/14.8148"
+          },
+          {
+            "label": "Naturkartan",
+            "url": "https://www.naturkartan.se/sv/kronobergs-lan/badplats-kampen"
+          }
+        ]
+      }
     }
   ]
 }
