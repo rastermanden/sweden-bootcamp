@@ -77,7 +77,7 @@ function CategoryBadge({ category, label }: { category: string; label: string })
   const c = CAT_COLORS[category] ?? { text: 'white', bg: 'rgba(255,255,255,0.1)' }
   return (
     <span
-      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
+      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full max-w-full truncate"
       style={{ color: c.text, background: c.bg }}
     >
       {label}
@@ -122,7 +122,7 @@ export default function NaerhedenSection() {
         <div className="grid lg:grid-cols-[1.3fr_1fr] gap-6 items-start">
 
           {/* Map */}
-          <FadeUp>
+          <FadeUp className="min-w-0">
             <div className="rounded-2xl overflow-hidden shadow-lg border border-white/10" style={{ height: 540 }}>
               <NaerhedenMap
                 features={filtered}
@@ -148,7 +148,7 @@ export default function NaerhedenSection() {
           </FadeUp>
 
           {/* Sidebar */}
-          <FadeUp delay={2}>
+          <FadeUp delay={2} className="min-w-0">
             <div className="flex flex-col gap-4 lg:h-[540px]">
 
               {/* Category filter */}
@@ -308,7 +308,7 @@ export default function NaerhedenSection() {
                             )}
                           </div>
                           {catMeta && (
-                            <div className="shrink-0">
+                            <div className="shrink-0 min-w-0 max-w-[90px] overflow-hidden">
                               <CategoryBadge category={p.category} label={catMeta.label} />
                             </div>
                           )}
