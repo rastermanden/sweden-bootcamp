@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__github__pull_request_read",
+      "Bash(npm run lint)",
+      "Bash(node_modules/.bin/tsc --noEmit)"
+    ]
+  }
+}
