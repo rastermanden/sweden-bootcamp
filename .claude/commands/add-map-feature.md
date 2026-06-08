@@ -13,7 +13,7 @@ Add a new attraction to the Nærheden map (`data/naerheden.geojson`).
 
 ## Step 1 — Get page content and coordinates
 
-Try **WebFetch** on the URL. Many Swedish authority sites (Länsstyrelsen, Naturkartan, AllTrails) return HTTP 403. If that happens, **WebSearch** the location name extracted from the URL slug to get descriptive info.
+Try **WebFetch** on the URL. Swedish authority sites and trail platforms commonly return HTTP 403 — this includes Länsstyrelsen, Naturkartan, and AllTrails. If that happens, **WebSearch** the location name extracted from the URL slug to get descriptive info.
 
 **Coordinates are required — never guess or estimate them.** Use this priority order:
 
@@ -24,6 +24,7 @@ Try **WebFetch** on the URL. Many Swedish authority sites (Länsstyrelsen, Natur
    - `google.com/maps/place/@LAT,LON,ZOOMz`
    - Note: Google Maps uses `lat,lon` order. GeoJSON coordinates are `[longitude, latitude]` — swap them.
    - **`maps.app.goo.gl` short URLs cannot be expanded** — ask the user to open the link in their browser and copy the full URL from the address bar.
+   - **Multiple `!3d`/`!4d` pairs in the data segment** — Google Maps URLs sometimes contain several lat/lon pairs (e.g. one for the search origin, one for the pin). Always use the pair whose values are closest to the `@LAT,LON` viewport anchor that appears right after `/place/` — that is the place pin.
 
 2. **Fetched page contains a Google Maps link** — extract coordinates from it as above.
 
@@ -44,7 +45,7 @@ Never proceed with guessed, estimated, or approximate coordinates.
 
 - `category`: `vand` (lakes, rivers, swimming, kayaking, fishing, sauna), `natur` (forests, trails, hiking, wildlife, nature reserves), `lokal` (villages, farms, markets, cultural sites)
 - `difficulty`: `let`, `let-moderat`, `moderat`, or `kraevende`
-- `distance`: road or straight-line distance from the camp at Lidhult (~56.8297°N, 13.5473°E / Loshult 7, Lidhult). If the feature falls outside the current map bounding box ([13.30–14.10°E, 56.60–57.10°N]), note this clearly.
+- `distance`: straight-line distance from the camp at Lidhult (56.8297°N, 13.5473°E / Loshult 7, Lidhult). Always measure from the camp — ignore sourced road distances that quote a different origin (e.g. "X km from town centre"). If the feature falls outside the current map bounding box ([13.30–14.10°E, 56.60–57.10°N]), note this clearly.
 - `duration`: realistic visit time
 - `bestMonths`: array of month numbers (1–12)
 - `included`: always `false` for external attractions
@@ -107,7 +108,7 @@ Always include the source URL (Naturkartan, Länsstyrelsen, etc.) as a `links` e
 
 ## Step 6 — Update the GeoJSON
 
-Read `data/naerheden.geojson`, append the new feature to the `features` array, and update `metadata.lastUpdated` to today's date.
+Read `data/naerheden.geojson`, append the new feature to the `features` array, and update `metadata.lastUpdated` to today's date — skip the edit if it is already today's date.
 
 ## Step 7 — Show result
 
