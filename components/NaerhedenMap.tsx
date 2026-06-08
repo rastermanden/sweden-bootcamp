@@ -71,6 +71,9 @@ export default function NaerhedenMap({ features, selectedId, onSelect, center, z
       style={{ height: '100%', width: '100%' }}
       scrollWheelZoom={false}
       zoomControl
+      maxBounds={[[54.5, 10.5], [59.5, 17.5]]}
+      maxBoundsViscosity={0.85}
+      minZoom={8}
     >
       <TileLayer
         url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"

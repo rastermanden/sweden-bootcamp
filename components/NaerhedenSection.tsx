@@ -46,6 +46,10 @@ type GeoJSONMeta = {
 
 const data = rawData as unknown as { metadata: GeoJSONMeta; features: NaerhedenFeature[] }
 
+// Computed once at module level — prevents reference churn that triggers ResetView's useEffect
+const MAP_CENTER: [number, number] = [data.metadata.map.center[1], data.metadata.map.center[0]]
+const MAP_ZOOM = data.metadata.map.zoom
+
 const MONTH_NAMES = ['jan','feb','mar','apr','maj','jun','jul','aug','sep','okt','nov','dec']
 
 const DIFFICULTY_COLORS: Record<string, string> = {
@@ -73,7 +77,7 @@ function CategoryBadge({ category, label }: { category: string; label: string })
   const c = CAT_COLORS[category] ?? { text: 'white', bg: 'rgba(255,255,255,0.1)' }
   return (
     <span
-      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full"
+      className="inline-block text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full max-w-full truncate"
       style={{ color: c.text, background: c.bg }}
     >
       {label}
@@ -97,8 +101,6 @@ export default function NaerhedenSection() {
     setSelectedId(prev => prev === id ? null : id)
   }
 
-  const mapCenter: [number, number] = [metadata.map.center[1], metadata.map.center[0]]
-
   return (
     <section id="naerheden" className="py-20 bg-forest-900">
       <div className="max-w-7xl mx-auto px-6">
@@ -120,14 +122,14 @@ export default function NaerhedenSection() {
         <div className="grid lg:grid-cols-[1.3fr_1fr] gap-6 items-start">
 
           {/* Map */}
-          <FadeUp>
-            <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10" style={{ height: 540 }}>
+          <FadeUp className="min-w-0">
+            <div className="rounded-2xl overflow-hidden shadow-lg border border-white/10" style={{ height: 540 }}>
               <NaerhedenMap
                 features={filtered}
                 selectedId={selectedId}
                 onSelect={handleSelect}
-                center={mapCenter}
-                zoom={metadata.map.zoom}
+                center={MAP_CENTER}
+                zoom={MAP_ZOOM}
               />
             </div>
 
@@ -146,8 +148,8 @@ export default function NaerhedenSection() {
           </FadeUp>
 
           {/* Sidebar */}
-          <FadeUp delay={2}>
-            <div className="flex flex-col gap-4">
+          <FadeUp delay={2} className="min-w-0">
+            <div className="flex flex-col gap-4 lg:h-[540px]">
 
               {/* Category filter */}
               <div className="flex flex-wrap gap-2">
@@ -180,7 +182,7 @@ export default function NaerhedenSection() {
               </div>
 
               {/* Place list */}
-              <div className="flex flex-col gap-2.5 max-h-[460px] overflow-y-auto pr-1">
+              <div className="flex flex-col gap-2.5 flex-1 min-h-0 overflow-y-auto overflow-x-hidden pr-1">
                 {filtered.map(feature => {
                   const p = feature.properties
                   const isSelected = feature.id === selectedId
@@ -288,7 +290,7 @@ export default function NaerhedenSection() {
                               />
                             </div>
                           )}
-                          <div className="flex-1 min-w-0">
+                          <div className="flex-1 min-w-0 overflow-hidden">
                             <div className="flex items-center gap-1.5 mb-0.5">
                               <span className="text-sm shrink-0">{p.icon}</span>
                               <span className="font-serif font-semibold text-white text-sm truncate">
@@ -306,7 +308,7 @@ export default function NaerhedenSection() {
                             )}
                           </div>
                           {catMeta && (
-                            <div className="shrink-0">
+                            <div className="shrink-0 min-w-0 max-w-[90px] overflow-hidden">
                               <CategoryBadge category={p.category} label={catMeta.label} />
                             </div>
                           )}

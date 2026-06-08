@@ -93,7 +93,7 @@ export default function Home() {
       {/* ── HERO ── */}
       <section
         id="hjem"
-        className="relative min-h-screen flex items-center justify-center text-white text-center"
+        className="relative overflow-hidden min-h-screen flex items-center justify-center text-white text-center"
         style={{
           backgroundImage:
             'linear-gradient(to bottom, rgba(15,40,25,.52) 0%, rgba(27,67,50,.35) 55%, rgba(10,30,18,.72) 100%), url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1900&q=85")',
